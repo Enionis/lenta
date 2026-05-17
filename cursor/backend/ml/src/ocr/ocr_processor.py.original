@@ -1,0 +1,252 @@
+"""OCR processing using PaddleOCR."""
+
+import re
+import logging
+from pathlib import Path
+from typing import List, Dict, Optional, Tuple
+import numpy as np
+
+try:
+    from paddleocr import PaddleOCR
+    PADDLEOCR_AVAILABLE = True
+except ImportError:
+    PADDLEOCR_AVAILABLE = False
+    logging.warning("PaddleOCR not available. OCR will not work.")
+
+logger = logging.getLogger(__name__)
+
+
+class OCRProcessor:
+    """OCR процессор для распознавания текста с ценников."""
+
+    def __init__(
+        self,
+        lang: str = 'ru',
+        use_gpu: bool = True,
+        det_model_dir: Optional[str] = None,
+        rec_model_dir: Optional[str] = None
+    ):
+        """
+        Инициализация OCR.
+
+        Args:
+            lang: Язык (ru, en, etc.)
+            use_gpu: Использовать GPU
+            det_model_dir: Путь к модели детекции текста
+            rec_model_dir: Путь к модели распознавания текста
+        """
+        if not PADDLEOCR_AVAILABLE:
+            raise RuntimeError("PaddleOCR not installed. Run: pip install paddleocr")
+
+        self.lang = lang
+
+        # Инициализация PaddleOCR
+        kwargs = {
+            'use_angle_cls': True,
+            'lang': lang,
+            'use_gpu': use_gpu
+        }
+
+        if det_model_dir:
+            kwargs['det_model_dir'] = det_model_dir
+        if rec_model_dir:
+            kwargs['rec_model_dir'] = rec_model_dir
+
+        logger.info(f"Initializing PaddleOCR (lang={lang}, gpu={use_gpu})")
+        self.ocr = PaddleOCR(**kwargs)
+
+    def extract_text(self, image: np.ndarray) -> List[Dict]:
+        """
+        Извлечение текста из изображения.
+
+        Args:
+            image: numpy array (BGR или RGB)
+
+        Returns:
+            Список словарей с текстом и координатами:
+            [{
+                'text': 'распознанный текст',
+                'confidence': 0.95,
+                'bbox': [[x1,y1], [x2,y2], [x3,y3], [x4,y4]]
+            }, ...]
+        """
+        if image is None or image.size == 0:
+            return []
+
+        # Конвертация BGR → RGB если нужно
+        if len(image.shape) == 3 and image.shape[2] == 3:
+            image_rgb = image[:, :, ::-1]  # BGR to RGB
+        else:
+            image_rgb = image
+
+        # OCR
+        result = self.ocr.ocr(image_rgb, cls=True)
+
+        if result is None or len(result) == 0:
+            return []
+
+        # Обработка результатов
+        texts = []
+        for line in result[0]:
+            if line is None:
+                continue
+
+            bbox, (text, conf) = line
+
+            texts.append({
+                'text': text,
+                'confidence': float(conf),
+                'bbox': bbox
+            })
+
+        return texts
+
+    def extract_price_tag_info(self, image: np.ndarray) -> Dict:
+        """
+        Извлечение структурированной информации с ценника.
+
+        Args:
+            image: Изображение ценника
+
+        Returns:
+            Словарь с полями ценника
+        """
+        texts = self.extract_text(image)
+
+        # Объединяем все тексты для анализа
+        all_text_lines = [t['text'] for t in texts]
+
+        # Используем пост-обработку для извлечения полей
+        try:
+            from .text_postprocess import OCRPostProcessor
+            processor = OCRPostProcessor()
+            result = processor.extract_fields(all_text_lines)
+        except Exception as e:
+            # Fallback на базовое извлечение
+            result = {
+                'product_name': self._extract_product_name(texts),
+                'price_default': self._extract_price(texts, 'default'),
+                'price_card': self._extract_price(texts, 'card'),
+                'barcode': self._extract_barcode(texts),
+                'id_sku': self._extract_sku(texts),
+                'discount_amount': self._extract_discount(texts),
+            }
+
+        result['all_texts'] = all_text_lines
+        return result
+
+    def _extract_product_name(self, texts: List[Dict]) -> str:
+        """Извлечение наименования товара."""
+        # Ищем длинную строку без цифр (название продукта)
+        candidates = []
+
+        for t in texts:
+            text = t['text']
+            # Фильтруем короткие строки и строки с ценами/штрихкодами
+            if len(text) > 10 and not re.match(r'^[\d\s,.]+$', text):
+                if not re.search(r'\d{13}', text):  # Не штрихкод
+                    if not re.search(r'\d+[,.]\d{2}', text):  # Не цена
+                        candidates.append(text)
+
+        return candidates[0] if candidates else ''
+
+    def _extract_price(self, texts: List[Dict], price_type: str = 'default') -> str:
+        """Извлечение цены."""
+        prices = []
+
+        for t in texts:
+            text = t['text'].replace(',', '.').replace(' ', '')
+
+            # Ищем числа формата XXX.XX или XXXX.XX
+            matches = re.findall(r'(\d+[.]\d{2})', text)
+            prices.extend(matches)
+
+        if not prices:
+            return ''
+
+        # Конвертируем в float
+        price_values = [float(p) for p in prices]
+
+        if price_type == 'default':
+            # Большая цена (обычно без скидки)
+            return str(max(price_values)) if price_values else ''
+        elif price_type == 'card':
+            # Меньшая цена (по карте)
+            if len(price_values) >= 2:
+                return str(min(price_values))
+            return ''
+
+        return ''
+
+    def _extract_barcode(self, texts: List[Dict]) -> str:
+        """Извлечение штрихкода (13 цифр)."""
+        for t in texts:
+            text = t['text'].replace(' ', '')
+
+            # Ищем 13 цифр
+            match = re.search(r'(\d{13})', text)
+            if match:
+                barcode = match.group(1)
+                # Проверяем что начинается с 46 (Россия)
+                if barcode.startswith('46'):
+                    return barcode
+
+        return ''
+
+    def _extract_sku(self, texts: List[Dict]) -> str:
+        """Извлечение артикула (12 цифр)."""
+        for t in texts:
+            text = t['text'].replace(' ', '')
+
+            # Ищем 12 цифр
+            match = re.search(r'(\d{12})', text)
+            if match:
+                sku = match.group(1)
+                # SKU обычно не начинается с 46
+                if not sku.startswith('46'):
+                    return sku
+
+        return ''
+
+    def _extract_discount(self, texts: List[Dict]) -> str:
+        """Извлечение скидки."""
+        for t in texts:
+            text = t['text']
+
+            # Ищем проценты
+            match = re.search(r'-?(\d+)%', text)
+            if match:
+                return f"-{match.group(1)}%"
+
+            # Или слова со скидкой
+            if any(word in text.lower() for word in ['скидка', 'акция', 'выгода']):
+                return text
+
+        return 'нет'
+
+
+def load_ocr_processor(use_gpu: bool = True) -> OCRProcessor:
+    """Фабричная функция для загрузки OCR."""
+    return OCRProcessor(use_gpu=use_gpu)
+
+
+def post_process_text(text: str, field_type: str) -> str:
+    """Пост-обработка распознанного текста."""
+    if not text:
+        return ''
+
+    # Убираем лишние пробелы
+    text = ' '.join(text.split())
+
+    if field_type == 'barcode':
+        # Оставляем только цифры
+        text = re.sub(r'\D', '', text)
+    elif field_type == 'price':
+        # Нормализация цены
+        text = text.replace(',', '.').replace(' ', '')
+        # Проверяем формат
+        if re.match(r'^\d+[.]\d{2}$', text):
+            return text
+        return ''
+
+    return text

@@ -1,0 +1,93 @@
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_26.jpg	Конфитюр ZUEGG Клубника экстра (Германия) 320г
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_26.jpg	347,39
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_26.jpg	80298342
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_40273_26.jpg	Вино PLACIDO Кьянти ординарное сортовое кр. сух. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_40273_26.jpg	2105,29
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_40273_26.jpg	8011047030600.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_6.jpg	Вино CLOCE DU CHARME Каберне Мерло кр. сух. (Франция) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_6.jpg	1334,99
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_6.jpg	3437540053130.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_40.jpg	Вино NOBILOMO Марцемино Эмилия - Романья DOC кр. п/ сл. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_40.jpg	1578,94
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_40.jpg	8027625004642.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_21251_41.jpg	Вино CANA Центральная долина DO кр. сух. (Чили) 0, 187L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_21251_41.jpg	368,42
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_21251_41.jpg	7804623056632
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_5.jpg	Вино CLOCE DU CHARME Каберне Совиньон кр. сух. (Франция) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_5.jpg	1334,99
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_5.jpg	3437540053123.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_38.jpg	Вино DUCA DI SARAGNAMO сорт. выд. IGT Амтулия Алхимия Примитиво кр. п/сух. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_38.jpg	3157,89
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_38.jpg	8009307012503.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_30401_48.jpg	Вино GRILLWINE ординарное кр. сух. (Россия) 1L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_30401_48.jpg	421,05
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_30401_48.jpg	4660304060085
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_47549_35.jpg	Вино TRE PASSO кр. п/сух. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_47549_35.jpg	2210,52
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_47549_35.jpg	4690491103463.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_12506_21.jpg	Вино CELLIER DES DAUPHINS Селье де Дофен Медитерране Престиж роз. сух. (Франция) 0. 25L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_12506_21.jpg	599,99
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_12506_21.jpg	3179077542571
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_4.jpg	Вино MICKAEL MARILLIER BEAUJOLAIS AOP ординарное сортовое кр. сух. (Франция) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_4.jpg	1999,99
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_6595_4.jpg	3363040800885.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_23.jpg	Набор мед PERONI Чистый нектар: Гречишный, Кориандровый, Липовый (Россия) 90г
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_23.jpg	442,19
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_23.jpg	4607936173547
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_2472_7.jpg	Мед PREMIUM CLUB с орехами ст. (Россия), 225г
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_2472_7.jpg	305,29
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_2472_7.jpg	4606068709914
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_21251_37.jpg	Коктейль винный KAFER Hugo газ. сл. (Германия) 0, 2L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_21251_37.jpg	526,31
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_21251_37.jpg	4062073029278
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_19.jpg	Мед PREMIUM CLUB с ореховым ассорти (Россия) 260г
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_19.jpg	373,69
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_19.jpg	4606068893248
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_0_1.jpg	Напиток безалкогольный SANTO STEFANO Bianco (Россия) 0, 25L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_0_1.jpg	252,63
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_0_1.jpg	4670025474658
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_35994_52.jpg	Вино МОНАСТЫРСКАЯ ТРАПЕЗА кр. п/ сл. ТетраПак (Россия) 1L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_35994_52.jpg	399,99
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_35994_52.jpg	4607002225668
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_2472_8.jpg	Мед МАСТЕР МЕДА Разноцветье натуральный ст/б (Россия) 330r
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_2472_8.jpg	221,09
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_2472_8.jpg	4607955860022
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_74808_52.jpg	Вино CASA DEFFRA Колли Беричи Ризерва выд. кр. п/сух. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_74808_52.jpg	2526,31
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_74808_52.jpg	4690491203293.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_68147_48.jpg	Вино MAZZEI Poggio Badiola Тоскана выдерж. кр. сух. (Италия) 0.75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_68147_48.jpg	2631,57
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_68147_48.jpg	8016118511156.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_86388_65.jpg	Вино MATSU EI Recio выдерж. кр. сух. (Испания) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_86388_65.jpg	3413,68
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_86388_65.jpg	8437008695891.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_47549_34.jpg	Вино PALAZZO NOBILE Кьянти Ризерва марочное кр. сух. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_47549_34.jpg	1578,94
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_47549_34.jpg	8009620803314.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_27156_21.jpg	Вино CLAUDE VAL кр. сух. (Франция) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_27156_21.jpg	1653,68
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_27156_21.jpg	3760040420295.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_87976_70.jpg	Вино SATIS DEI VDT Кастилья кр. сух. (Испания) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_87976_70.jpg	1789,47
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_87976_70.jpg	8436033846674.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_28.jpg	Варенье ВОЛОГОДСКОЕ ВАРЕНЬЕ абрикосовое (Россия) 370r
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_28.jpg	284,29
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\43_15_6822_28.jpg	4607025805700
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_12506_20.jpg	Вино ФРОНТЕРА Каберне Совиньон кр. п/ сух.  (Чили) 0. 375L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_12506_20.jpg	631,57
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_12506_20.jpg	4973480846443
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_20188_18.jpg	Вино LA BAUME SAINT-PAUL Мерло Пэй Д' ОК IGP кр. сух. (Франция) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_20188_18.jpg	1999,99
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_20188_18.jpg	3500610042638.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_74808_55.jpg	Вино SANGRE DE TORO Резерва Темпранильо сорт. выд. кр. сух. (Испания) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_74808_55.jpg	1789,47
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_74808_55.jpg	8410113555267.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_7168_14.jpg	Вино безалкогольное LE PETIT BERET Rose Prestige (Франция) 0, 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_7168_14.jpg	1368,42
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\25_12-20_7168_14.jpg	3760251404732
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_41.jpg	Вино SELLATA Примитиво ИГП Алулия сорт. кр. п/сух. (Италия) 0. 75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_41.jpg	1578,94
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_54056_41.jpg	8054754895391.0
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_68147_51.jpg	Вино PICCINI Кьянти Ризерва выдерж. кр. сух. (Италия) 0.75L
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_68147_51.jpg	1684,19
+E:\brbrbr\lent4\backend\ml\data\paddleocr_format\val\images\26_12-20_68147_51.jpg	8002793958379.0

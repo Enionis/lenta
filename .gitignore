@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Docker overrides
+docker-compose.override.yml
+
+# Logs
+*.log
+sentry.log
+
+# ===== Данные от организаторов (НЕ коммитим — их предоставляет жюри) =====
+Данные/
+Материалы/
+
+# ===== Временные файлы пайплайна =====
+tmp/
+
+# ===== LLM-веса (1.8 GB) — скачать вручную (см. README) =====
+ml/weights/qwen2.5-3b-q4_k_m.gguf
+ml/weights/*.gguf
+
+# ===== Intermediate ML-артефакты (регенерируются скриптами) =====
+ml/output/tracks/
+ml/output/ocr_qr_*.csv
+ml/output/final_*.csv
+ml/output/final_eval_*.csv
+
+# Synthetic dataset / промежуточные кадры
+ml/output/yolo_dataset*/
+ml/output/synth/
+ml/output/frames/
+ml/output/pseudo_vis/
+
+# Backup-копии экспериментов
+ml/output/_pre_*/
+ml/output/_3in157_*/
+ml/output/_tracks_*/
+ml/output/_v*_backup/
+ml/output/tracks_*_backup/
+ml/weights_backup/
+ml/scripts/_backup_*/
+
+# Старые версии моделей (используем v2 + v4 + v5b)
+ml/output/runs/pricetag_v1/
+ml/output/runs/pricetag_v3/
+ml/output/runs/pricetag_v5/
+ml/output/runs/_backup/
+
+# YOLO training viz (PNG-кривые, train_batch*.jpg) — не нужны в репо
+ml/output/runs/*/*.png
+ml/output/runs/*/*.jpg
+ml/output/runs/*/results.csv
+ml/output/runs/*/args.yaml
+# Из weights/ нужен только best.pt
+ml/output/runs/*/weights/last.pt
+
+# Network sniffs (для разработки scraper'а)
+*.har
+
+# Кэши
+.EasyOCR/
+.cache/
+
+# Прочие неиспользуемые pre-trained веса
+yolov8s-worldv2.pt
+yolov8s.pt
+yolov8n.pt

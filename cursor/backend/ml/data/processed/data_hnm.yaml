@@ -1,0 +1,6 @@
+path: backend/ml/data/processed
+train: train.txt
+val: val.txt
+
+nc: 1
+names: ['price_tag']

@@ -1,0 +1,29 @@
+# ML and CV dependencies for Lenta Tech price tag recognition
+
+# Deep Learning
+ultralytics>=8.3.0
+onnxruntime>=1.16.0
+
+# OCR
+paddleocr>=2.7.0
+paddlepaddle-gpu>=2.6.0; sys_platform == 'linux'
+paddlepaddle>=2.6.0; sys_platform != 'linux'
+
+# QR/Barcode
+pyzbar>=0.1.9
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Image/Video processing
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0.0
+
+# Training (optional, for model fine-tuning)
+tensorboard>=2.15.0

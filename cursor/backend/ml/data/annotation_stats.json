@@ -1,0 +1,45 @@
+{
+  "total_price_tags": 157,
+  "unique_products": 156,
+  "csv_files": 3,
+  "columns": [
+    "filename",
+    "product_name",
+    "price_default",
+    "price_card",
+    "price_discount",
+    "barcode",
+    "discount_amount",
+    "id_sku",
+    "print_datetime",
+    "code",
+    "additional_info",
+    "color",
+    "special_symbols",
+    "frame_timestamp",
+    "x_min",
+    "y_min",
+    "x_max",
+    "y_max",
+    "qr_code_barcode",
+    "price1_qr",
+    "price2_qr",
+    "price3_qr",
+    "price4_qr",
+    "wholesale_level_1_count",
+    "wholesale_level_1_price",
+    "wholesale_level_2_count",
+    "wholesale_level_2_price",
+    "action_price_qr",
+    "action_code_qr",
+    "wholesale_level_1_coun"
+  ],
+  "color_distribution": {
+    "red": 156,
+    "yellow": 1
+  },
+  "bbox_stats": {
+    "avg_width": 100.0,
+    "avg_height": 150.0
+  }
+}

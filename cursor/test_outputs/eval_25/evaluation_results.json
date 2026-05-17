@@ -1,0 +1,17 @@
+{
+  "detection_recall": 0.2982456140350877,
+  "detection_precision": 0.37777777777777777,
+  "field_accuracies": {
+    "barcode": 0.0,
+    "product_name": 0.0,
+    "price_default": 0.0,
+    "price_card": 0.0,
+    "id_sku": 0.0,
+    "discount_amount": 0.0
+  },
+  "final_metric": 0.0,
+  "successful_tags": 0,
+  "total_gt_tags": 57,
+  "total_pred_tags": 45,
+  "matched_tags": 17
+}

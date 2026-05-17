@@ -1,0 +1,8 @@
+# Dataset for price tag detection
+path: E:/brbrbr/lent4/backend/ml/data/processed
+train: images
+val: images
+test: images
+
+nc: 1
+names: ['price_tag']

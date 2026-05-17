@@ -1,0 +1,8 @@
+E:/brbrbr/lent4/backend/ml/data/processed/images/26_12-20_68147.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/26_12-20_54056.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/43_15_6822.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/fpneg_000007.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/26_12-20_27156.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/fpneg_000008.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/fpneg_000003.jpg
+E:/brbrbr/lent4/backend/ml/data/processed/images/26_12-20_15833.jpg
